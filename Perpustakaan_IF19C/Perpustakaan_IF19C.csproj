@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D11218F1-EA14-45FC-9C80-C7C419AC0841}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Perpustakaan_IF19C</RootNamespace>
+    <AssemblyName>Perpustakaan_IF19C</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\FAboutProgrammer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FAboutProgrammer.Designer.cs">
+      <DependentUpon>FAboutProgrammer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FBuku.Designer.cs">
+      <DependentUpon>FBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FCariBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCariBuku.Designer.cs">
+      <DependentUpon>FCariBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FCariMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCariMahasiswa.Designer.cs">
+      <DependentUpon>FCariMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FCariPeminjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCariPeminjaman.Designer.cs">
+      <DependentUpon>FCariPeminjaman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FCariPetugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCariPetugas.Designer.cs">
+      <DependentUpon>FCariPetugas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FCeatkPeminjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCeatkPeminjaman.Designer.cs">
+      <DependentUpon>FCeatkPeminjaman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FCetakPengembalian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCetakPengembalian.Designer.cs">
+      <DependentUpon>FCetakPengembalian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Fmahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Fmahasiswa.Designer.cs">
+      <DependentUpon>Fmahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FMenuUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FMenuUtama.Designer.cs">
+      <DependentUpon>FMenuUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FPeminjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FPeminjaman.Designer.cs">
+      <DependentUpon>FPeminjaman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Fpengembalian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Fpengembalian.Designer.cs">
+      <DependentUpon>Fpengembalian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FPetugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FPetugas.Designer.cs">
+      <DependentUpon>FPetugas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kelas\koneksi.cs" />
+    <Compile Include="Laporan\CetakPeminjaman.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CetakPeminjaman.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakPengembalian.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CetakPengembalian.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FAboutProgrammer.resx">
+      <DependentUpon>FAboutProgrammer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FBuku.resx">
+      <DependentUpon>FBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FCariBuku.resx">
+      <DependentUpon>FCariBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FCariMahasiswa.resx">
+      <DependentUpon>FCariMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FCariPeminjaman.resx">
+      <DependentUpon>FCariPeminjaman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FCariPetugas.resx">
+      <DependentUpon>FCariPetugas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FCeatkPeminjaman.resx">
+      <DependentUpon>FCeatkPeminjaman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FCetakPengembalian.resx">
+      <DependentUpon>FCetakPengembalian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Fmahasiswa.resx">
+      <DependentUpon>Fmahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FMenuUtama.resx">
+      <DependentUpon>FMenuUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FPeminjaman.resx">
+      <DependentUpon>FPeminjaman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Fpengembalian.resx">
+      <DependentUpon>Fpengembalian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FPetugas.resx">
+      <DependentUpon>FPetugas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakPeminjaman.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CetakPeminjaman.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakPengembalian.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CetakPengembalian.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\libary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tambah.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_search_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_clear_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_control_point_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_add_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_assignment_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_clear_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

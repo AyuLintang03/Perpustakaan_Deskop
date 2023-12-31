@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Perpustakaan_IF19C.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Text" Type="System.String" Scope="User">
+      <Value Profile="(Default)">::Sistem Informasi Perpustakaan kampus:: </Value>
+    </Setting>
+    <Setting Name="WindowsState" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Maximized</Value>
+    </Setting>
+    <Setting Name="StartPosition" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CenterScreen</Value>
+    </Setting>
+    <Setting Name="IsMdiContainer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BackgroungImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Pilih Gambarr yang diinginkan untyk menjadi backgroung utama</Value>
+    </Setting>
+    <Setting Name="BackgroungImageLayout" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Stretch</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
